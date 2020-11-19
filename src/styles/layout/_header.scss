@@ -1,0 +1,22 @@
+.header {
+  width: 100%;
+  min-width: 32rem;
+  height: 6rem;
+  background-color: $dark-color;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  transition: height .5s;
+
+  @include breakpoint(desktop) {
+    height: 8rem;
+  }
+}
+
+.header.active {
+  @include breakpoint(desktop) {
+    height: 6rem;
+  }
+}

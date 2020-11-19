@@ -1,0 +1,37 @@
+.form {
+  &__group {
+    margin-bottom: 1.2rem;
+  }
+
+  &__group--invalid {
+    .form__input,
+    .form__textarea {
+      border: 1px solid $error-color;
+    }
+
+    .form__invalid-message {
+      display: block;
+    }
+  }
+
+  &__input,
+  &__textarea {
+    width: 100%;
+    padding: 1rem;
+    border: none;
+    min-height: 4.5rem;
+    border: 1px solid #ccc;
+  }
+
+  &__textarea {
+    height: 24rem;
+    resize: none;
+  }
+
+  &__invalid-message {
+    display: none;
+    color: $error-color;
+    font-size: 1.4rem;
+    margin-top: 0.6rem;
+  }
+}

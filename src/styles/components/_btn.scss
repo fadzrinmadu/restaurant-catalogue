@@ -1,0 +1,34 @@
+.btn {
+  color: $white-color;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.4rem;
+  font-weight: 600;
+  padding: 1rem 2rem;
+  min-height: 4.4rem;
+  border: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: .5s;
+  cursor: pointer;
+
+  &__like {
+    font-size: 1.8rem;
+    position: fixed;
+    bottom: 1.6rem;
+    right: 1.6rem;
+    background-color: #db0000;
+    color: $white-color;
+    border-radius: 50%;
+    width: 5.5rem;
+    height: 5.5rem;
+  }
+
+  &--dark {
+    background-color: #141414;
+
+    &:hover {
+      background-color: rgba(20, 20, 20, .8);
+    }
+  }
+}

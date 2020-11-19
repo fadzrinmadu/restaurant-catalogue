@@ -1,0 +1,15 @@
+.hamburger-menu {
+  cursor: pointer;
+  font-size: 2.6rem;
+  position: relative;
+  z-index: 20;
+  padding: .4rem 1.2rem;
+
+  @include breakpoint(desktop) {
+    display: none;
+  }
+
+  .fa-times {
+    display: none;
+  }
+}

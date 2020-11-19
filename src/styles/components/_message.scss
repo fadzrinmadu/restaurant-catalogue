@@ -1,0 +1,20 @@
+.message {
+  &__fallback {
+    text-align: center;
+    padding: 1.2rem 2rem;
+    background: #ddd;
+  }
+
+  &__flash-message {
+    width: 100%;
+    padding: 1.2rem 2rem;
+    margin-bottom: 1.2rem;
+    font-size: 1.4rem;
+
+    &--success {
+      color: $white-color;
+      background: $success-color;
+    }
+  }
+}
+

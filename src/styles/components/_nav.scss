@@ -1,0 +1,77 @@
+.nav.menu-open {
+  .hamburger-menu {
+    .fa-times {
+      display: block;
+    }
+
+    .fa-bars {
+      display: none;
+    }
+  }
+
+  .nav__list {
+    transform: translateX(0);
+  }
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: $white-color;
+
+  &__list {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 28rem;
+    height: 100vh;
+    background-color: $dark-color;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    transform: translateX(28rem);
+    transition: transform .3s ease-in-out;
+
+    @include breakpoint(desktop) {
+      position: initial;
+      width: initial;
+      height: initial;
+      background-color: initial;
+      flex-direction: row;
+      transform: translateX(0);
+    }
+  }
+
+  &__item:not(:last-child) {
+    margin-bottom: .5rem;
+
+    @include breakpoint(desktop) {
+      margin-right: 3rem;
+      margin-bottom: 0;
+    }
+  }
+
+  &__link {
+    display: block;
+    font-size: 3rem;
+    padding: 1rem;
+
+    @include breakpoint(desktop) {
+      font-size: 1.6rem;
+      transition: color .5s;
+    }
+
+    &:hover {
+      @include breakpoint(desktop) {
+        color: $primary-color;
+      }
+    }
+
+    &.active {
+      color: $primary-color;
+    }
+  }
+}

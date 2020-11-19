@@ -1,0 +1,62 @@
+html {
+  font-size: 10px;
+}
+
+body {
+  color: $dark-color;
+  font-family: 'Alice', serif;
+  font-size: 1.6rem;
+  line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+}
+
+.main-heading {
+  &__title {
+    display: block;
+    font-size: 3.6rem;
+    text-shadow: 0 4px 8px #333;
+    margin-bottom: 1.8rem;
+
+    @include breakpoint(tablet) {
+      font-size: 4.8rem;
+    }
+
+    @include breakpoint(desktop) {
+      font-size: 7.3rem;
+    }
+  }
+
+  &__subtitle {
+    display: block;
+    font-family: 'Alice', serif;
+    font-size: 1.6rem;
+    text-shadow: 0 4px 8px #333;
+
+    @include breakpoint(desktop) {
+      font-size: 1.8rem;
+    }
+  }
+}
+
+.section-heading {
+  font-size: 2.4rem;
+  text-align: center;
+  margin-bottom: 4rem;
+
+  @include breakpoint(tablet) {
+    font-size: 3rem;
+  }
+
+  @include breakpoint(desktop) {
+    font-size: 3.6rem;
+    margin-bottom: 4rem;
+  } 
+}
