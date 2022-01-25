@@ -1,7 +1,7 @@
 const CONFIG = {
   KEY: '12345',
-  BASE_URL: 'https://dicoding-restaurant-api.el.r.appspot.com/',
-  BASE_IMAGE_URL: 'https://dicoding-restaurant-api.el.r.appspot.com/images/medium/',
+  BASE_URL: 'https://restaurant-api.dicoding.dev/',
+  BASE_IMAGE_URL: 'https://restaurant-api.dicoding.dev/images/medium/',
   CACHE_NAME: new Date().toISOString(),
   DATABASE_NAME: 'find-resto-database',
   DATABASE_VERSION: 1,
